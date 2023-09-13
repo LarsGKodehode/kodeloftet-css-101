@@ -1,0 +1,39 @@
+.page {
+  /* Overskriver body sin default margin */
+  margin: 0px;
+  /* Sørg for at body tar minste hele plassen */
+  min-height: 100vh;
+
+  /*
+    Bruke flex for å fortelle
+    hvordan den skal fordele
+    plassen på underelementer
+  */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: cornflowerblue;
+}
+
+.main {
+  /*
+    Denne bruker vi for at
+    hoved elementet vårt skal "vokse"
+    og ta all restrerendes plass på
+    siden vår
+  */
+  flex-grow: 1;
+
+
+  background-color: cornsilk;
+}
+
+.footer {
+  background-color: cadetblue;
+}
+
+.content-card {
+  max-width: 400px;
+}
